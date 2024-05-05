@@ -194,24 +194,25 @@ html {
     width: 100%;
 
     /*100%*/
-    p {
-        font-family: ubuntu;
-        user-select: none;
-        font-weight: 500;
-        margin-bottom: 3px;
-    }
 
-    input {
-        margin-top: 5px;
-        user-select: none;
-    }
+}
 
-    label {
-        font-family: sans-serif;
+#filter_form>div>p{
+    font-family: ubuntu;
+    user-select: none;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+#filter_form>div>input {
+    margin-top: 5px;
+    user-select: none;
+}
+#filter_form>div>label {
+    font-family: sans-serif;
         user-select: none;
         font-size: 90%;
     }
-}
 
 #head>#search {
     border: none;
