@@ -27,6 +27,8 @@ A prospective entrepreneur plans to initiate a t-shirt business, focusing on onl
 <li>Every t-shirt type has a limited quantity. If the customer tries to order more than the available quantity, an error message should appear.</li>
 </ul>
 <h2>UI Design: </h2>
-<h3>Product Listing Page</h3>
+<h3>Product Listing Page:</h3>
+<img src="readme_images/a.png" alt="Product Listing Page">
 
 <h3>Shopping Cart - Pre-Checkout Page</h3>
+<img src="readme_images/b.png" alt="Shopping Cart - Pre-Checkout Page">
