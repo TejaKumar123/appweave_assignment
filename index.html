@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TeeRex Store</title>
+	<link rel="stylesheet" href="index.css" media="screen and (min-width:500px)">
+	<link rel="stylesheet" href="index1.css" media="screen and (max-width:500px)">
+</head>
+
+<body>
+	<div id="header">
+		<li>TeeRex Store</li>
+		<div>
+			<li title="Products" id="prod_link" onclick="open_page(event,'page1','page2')">Products</li>
+			<div title="Cart" onclick="open_page(event,'page2','page1')">
+				<span id="cart_nos">0</span>
+				<img src="images/icons/cart1.png" alt="cart">
+			</div>
+		</div>
+	</div>
+
+	<div id="page1">
+		<div id="head">
+			<div id="filter">
+				<img src="images/icons/filter.svg" alt="filter" onclick="open_filter(event)">
+				<div id="filter_box">
+					<form id="filter_form" onsubmit="cancel_submit(event)">
+						<div>
+							<p>Price</p>
+							<input type="checkbox" name="price1" id="price1" value="[0,250]">
+							<label for="price1">0-Rs.250</label><br>
+							<input type="checkbox" name="price2" id="price2" value="[250,500]">
+							<label for="price2">Rs.250-500</label><br>
+							<input type="checkbox" name="price3" id="price3" value="[500,1000]">
+							<label for="price3">Rs.500-1000</label><br>
+							<input type="checkbox" name="price4" id="price4" value="[1000,1000000]">
+							<label for="price4">Rs.1000 Above</label><br>
+						</div>
+						<div>
+							<p>Type</p>
+							<input type="checkbox" name="type1" id="type1" value="polo">
+							<label for="type1">Polo</label><br>
+							<input type="checkbox" name="type2" id="type2" value="hoodie">
+							<label for="type2">Hoodie</label><br>
+							<input type="checkbox" name="type3" id="type3" value="basic">
+							<label for="type3">Basic</label><br>
+							<input type="checkbox" name="type4" id="type4" value="strips">
+							<label for="type4">Strips</label><br>
+						</div>
+						<div>
+							<p>Gender</p>
+							<input type="checkbox" name="gender1" id="gender1" value="men">
+							<label for="gender1">Men</label><br>
+							<input type="checkbox" name="gender2" id="gender2" value="women">
+							<label for="gender2">Women</label><br>
+						</div>
+						<div>
+							<p>Color</p>
+							<input type="checkbox" name="color1" id="color1" value="red">
+							<label for="color1">Red</label><br>
+							<input type="checkbox" name="color2" id="color2" value="green">
+							<label for="color2">Green</label><br>
+							<input type="checkbox" name="color3" id="color3" value="blue">
+							<label for="color3">Blue</label><br>
+							<input type="checkbox" name="color4" id="color4" value="grey">
+							<label for="color4">Grey</label><br>
+							<input type="checkbox" name="color5" id="color5" value="black">
+							<label for="color5">Black</label><br>
+							<input type="checkbox" name="color6" id="color6" value="white">
+							<label for="color6">White</label><br>
+							<input type="checkbox" name="color7" id="color7" value="violet">
+							<label for="color7">Violet</label><br>
+						</div>
+						<input type="reset" id="reset_button" hidden>
+						<button onclick="clear_all_filters(event)">Clear All</button>
+					</form>
+				</div>
+			</div>
+			<div id="search">
+				<input type="text" oninput="search_cards(event)" placeholder="Search for products ...">
+				<!---<img src="images/icons/search1.png" alt="search" id="search_cards">--->
+			</div>
+			<p id="extra_ptag"></p>
+		</div>
+		<div id="cards">
+			<!----<div>
+				<li hidden>0</li>
+				<div>
+					<img src="images/pics/a.jpeg" alt="Red Polo">
+				</div>
+				<div>
+					<li>Red Polo</li>
+					<li>Rs.250.0</li>
+					<div>
+						<div>
+							<button>-</button>
+							<li>0</li>
+							<button>+</button>
+						</div>
+						<button>ADD</button>
+					</div>
+					<span></span>
+				</div>
+			</div>---->
+
+		</div>
+	</div>
+
+	<div id="page2">
+		<div id="carts_box">
+			<div id="carts_det">
+				<p>Total Products: <span id="total_prod">10</span></p>
+				<p>Total Price(Rs): <span id="total_price">230.0</span></p>
+			</div>
+			<div id="carts">
+				<!---<div>
+					<div>
+						<img src="images/pics/a.jpeg" alt="green Polo">
+					</div>
+					<div>
+						<li>Green Polo</li>
+						<li>Rs.230.0</li>
+						<li>10</li>
+					</div>
+					<button>Delete</button>
+				</div>---->
+
+			</div>
+		</div>
+		<br>
+	</div>
+</body>
+<script src="index.js"></script>
+
+</html>
